@@ -35,6 +35,7 @@ Goal: Print exactly the below w/ three functions:
     Arabic
     C++
 """
+
 languages = {'JavaScript': 'P',
              'Arabic': 'N',
              'R': 'P',
@@ -44,3 +45,23 @@ languages = {'JavaScript': 'P',
              'Latin': 'N',
              'Romanian': 'N',
              'English': 'N'}
+def sort1(languages):
+    lst = sorted(sorted(languages) , key=languages.__getitem__)
+    for x in lst:
+        print(x)
+def sort2(languages):
+    lst = sorted(languages, key = len)
+    for x in lst:
+        print(x)
+def sort3(languages):
+    lst = sorted(sorted(languages), key = lambda x:x[-1].lower(), reverse = True)
+    for x in lst:
+        print(x)
+print("1:\n\n")
+sort1(languages)
+print("\n\n")
+print("2.\n\n")
+sort2(languages)
+print("\n\n")
+print("3.\n\n")
+sort3(languages)

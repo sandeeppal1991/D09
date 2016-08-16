@@ -12,7 +12,11 @@
 
 # Body
 def most_frequent(s):
-    ...
+    dictionary_of_letters = {}
+    for idx in range(0,len(s)):
+        dictionary_of_letters[s[idx].lower()] = dictionary_of_letters.get(s[idx].lower(),0) + 1
+    for each_key in sorted(sorted(dictionary_of_letters),key = dictionary_of_letters.__getitem__, reverse = True):
+        print(each_key)
 
 
 ###############################################################################

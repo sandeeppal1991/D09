@@ -1,6 +1,7 @@
-x = 0
-y = 1
+x = 3
+y = 0
 names = ["Guido"]
+this = "Halo"
 try:
     this
     print(names[y])

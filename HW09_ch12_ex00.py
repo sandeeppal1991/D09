@@ -11,9 +11,12 @@
 #     returns their sum.
 ###############################################################################
 # Imports
-
 # Body
-
+def sumall(*numbers):
+    sum = 0
+    for each_number in numbers:
+        sum += each_number
+    return sum
 
 ##############################################################################
 def main():   # DO NOT CHANGE BELOW
